@@ -18,13 +18,14 @@
     <h1><i class="fas fa-sticky-note"></i> MyNotes</h1>
 
     <div class="menu-buttons">
-        <button class="add icon"><i class="fas fa-plus"></i>Dodaj</button>
-        <button class="delete-all icon"><i class="fas fa-trash-alt"></i>Usuń wszystkie</button>
+        <button class="add icon"><i class="fas fa-plus"></i> Dodaj</button>
+        <button class="delete-all icon"><i class="fas fa-trash-alt"></i> Usuń wszystkie</button>
     </div>
 </div>
 
 <div class="note-area">
-    <div class="note">
+    <!-- <div class="note">
+
         <div class="note-header">
             <h3 class="note-title">Notatka #1</h3>
             <button class="delete-note">
@@ -35,13 +36,14 @@
         <div class="note-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem sed risus ultricies tristique. Risus nec feugiat in fermentum posuere urna nec tincidunt praesent.
         </div>
-    </div>
+
+    </div> -->
 </div>
 
 <div class="note-panel">
     <h2>Dodaj notatkę</h2>
     <label for="category">Wybierz kategorię</label>
-    <select id="category">
+    <select id="category" onchange="selectValue()">
         <option value="0" disabled selected>- wybierz kategorię -</option>
         <option value="1">Zakupy</option>
         <option value="1">Praca</option>
@@ -51,8 +53,8 @@
     <textarea id="text"></textarea>
     <p class="error">Uzupełnij pola!</p>
     <div class="panel-buttons">
-        <button class="save icon"><i class="fas fa-save"></i>Zapisz</button>
-        <button class="cancel icon"><i class="far fa-window-close"></i>Anuluj</button>
+        <button class="save icon"><i class="fas fa-save"></i> Zapisz</button>
+        <button class="cancel icon"><i class="far fa-window-close"></i> Anuluj</button>
     </div>
 </div>
 
